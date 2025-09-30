@@ -55,13 +55,16 @@ label {
 /* Input fields */
 input[type="email"],
 input[type="password"] {
-  width: 100%;
-  padding: 16px;
+  display: block;
+  width: 100%;          /* match button width */
+  height: 52px;         /* exact same height as button */
+  padding: 0 16px;      /* horizontal padding only */
   border: 1px solid #ccc;
   border-radius: 6px;
   margin-bottom: 22px;
   font-size: 16px;
   color: #001b41;
+  box-sizing: border-box; /* ensures width includes padding */
 }
 
 /* Info text */
@@ -83,20 +86,21 @@ input[type="password"] {
 /* Curved Action button */
 .weiter-btn {
   display: inline-block;
-  width: 100%;
-  padding: 16px;
+  width: 100%;          /* matches input width */
+  height: 52px;         /* exact same height as input */
   background-color: #0052cc; /* dark blue */
   color: #fff;
   font-size: 17px;
   font-weight: bold;
   border: none;
-  border-radius: 30px; /* curved pill shape */
+  border-radius: 30px;  /* curved pill shape */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .weiter-btn:hover {
   background-color: #1a66ff; /* lighter/brighter blue */
+  box-shadow: 0 4px 12px rgba(0, 82, 204, 0.4);
 }
 
 /* Footer image aligned with form width (only index.html) */

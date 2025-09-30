@@ -76,18 +76,21 @@ input[type="email"] {
   display: inline-block;
   width: 100%;
   padding: 16px;
-  background-color: #0052cc;
+  background-color: #4B0082; /* dark purple (change to #002366 for dark blue) */
   color: #fff;
   font-size: 17px;
   font-weight: bold;
   border: none;
-  border-radius: 6px;
+  border-radius: 30px; /* curved pill shape */
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .weiter-btn:hover {
-  background-color: #003d99;
+  background-color: #360061; /* darker shade of purple */
+  /* If using dark blue instead, try #001a4d */
 }
+
 
 /* Footer image aligned with form width */
 .footer-img-wrapper {
@@ -100,3 +103,4 @@ input[type="email"] {
   border-radius: 8px;
   display: block;
 }
+

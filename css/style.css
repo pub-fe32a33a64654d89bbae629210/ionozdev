@@ -4,7 +4,7 @@ body {
   font-family: 'Open Sans', OpenSansRegular, Arial, "Arial Narrow", sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #001b41; /* dark blue-gray */
+  color: #00132e; /* darker text */
   background-color: #f9fbfd; /* lighter background */
   display: flex;
   flex-direction: column;
@@ -49,7 +49,7 @@ label {
   display: block;
   font-size: 16px;
   margin-bottom: 8px;
-  color: #001b41;
+  color: #00132e; /* darker label */
 }
 
 /* Input field */
@@ -60,13 +60,13 @@ input[type="email"] {
   border-radius: 6px;
   margin-bottom: 22px;
   font-size: 16px;
-  color: #001b41; /* typed text matches style */
+  color: #00132e; /* darker input text */
 }
 
 /* Info text */
 .info-text {
   font-size: 14px;
-  color: #001b41;
+  color: #00132e; /* darker info text */
   margin-bottom: 24px;
   line-height: 1.5;
 }

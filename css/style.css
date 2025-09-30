@@ -26,7 +26,7 @@ body {
   margin-top: 40px;
 }
 
-/* Enlarged form box */
+/* Form box */
 .form-box {
   background: #ffffff;
   padding: 60px 50px;
@@ -37,7 +37,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Bigger logo aligned left */
+/* Logo */
 .form-logo {
   height: 90px;
   display: block;
@@ -52,15 +52,16 @@ label {
   color: #001b41;
 }
 
-/* Input field */
-input[type="email"] {
+/* Input fields */
+input[type="email"],
+input[type="password"] {
   width: 100%;
   padding: 16px;
   border: 1px solid #ccc;
   border-radius: 6px;
   margin-bottom: 22px;
   font-size: 16px;
-  color: #001b41; /* typed text matches style */
+  color: #001b41;
 }
 
 /* Info text */
@@ -71,25 +72,34 @@ input[type="email"] {
   line-height: 1.5;
 }
 
-/* Button */
+/* Displayed email on password page */
+.user-email {
+  font-size: 15px;
+  color: #1a73e8; /* brighter blue */
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+/* Curved Action button */
 .weiter-btn {
   display: inline-block;
   width: 100%;
   padding: 16px;
-  background-color: #0052cc;
+  background-color: #0052cc; /* dark blue */
   color: #fff;
   font-size: 17px;
   font-weight: bold;
   border: none;
-  border-radius: 6px;
+  border-radius: 30px; /* curved pill shape */
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .weiter-btn:hover {
-  background-color: #003d99;
+  background-color: #1a66ff; /* lighter/brighter blue */
 }
 
-/* Footer image aligned with form width */
+/* Footer image aligned with form width (only index.html) */
 .footer-img-wrapper {
   width: 600px;
 }

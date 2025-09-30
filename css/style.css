@@ -104,3 +104,12 @@ input[type="email"] {
   display: block;
 }
 
+/* Displayed email above password field */
+.user-email {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a5fff; /* brighter blue */
+  margin-bottom: 20px;
+}
+
+

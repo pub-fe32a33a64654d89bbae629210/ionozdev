@@ -1,48 +1,41 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f9fbfd;
+  background-color: #f9fbfd; /* lighter background */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Fixed full image banner */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
+/* Full image banner */
 .header img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Push content down below fixed header */
+/* Container keeps form + footer aligned */
 .form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 300px; /* adjust so form starts below banner height */
+  margin-top: 40px;
 }
 
 /* Enlarged form box */
 .form-box {
   background: #ffffff;
-  padding: 60px 50px;
+  padding: 60px 50px; /* more padding */
   border-radius: 12px;
   box-shadow: 0 10px 35px rgba(0,0,0,0.2);
-  width: 600px;
+  width: 600px;       /* wider form */
   text-align: left;
   margin-bottom: 20px;
 }
 
 /* Bigger logo aligned left */
 .form-logo {
-  height: 90px;
+  height: 90px; /* enlarged logo */
   display: block;
   margin-bottom: 25px;
 }
@@ -90,15 +83,14 @@ input[type="email"] {
   background-color: #003d99;
 }
 
-/* Bigger footer image aligned with form */
+/* Footer image aligned with form width */
 .footer-img-wrapper {
-  width: 600px; /* matches form width */
+  width: 600px; /* matches enlarged form */
 }
 
 .footer-img {
   width: 100%;
-  height: 500px; /* make footer taller */
-  object-fit: cover; /* fill area nicely */
+  height: auto;
   border-radius: 8px;
   display: block;
 }

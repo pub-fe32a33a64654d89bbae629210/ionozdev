@@ -1,115 +1,52 @@
-/* Global font style */
-body {
-  margin: 0;
-  font-family: 'Open Sans', OpenSansRegular, Arial, "Arial Narrow", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #00132e; /* darker text */
-  background-color: #f9fbfd; /* lighter background */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Full image banner */
-.header img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Container keeps form + footer aligned */
-.form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
-}
-
-/* Enlarged form box */
+/* Form box */
 .form-box {
   background: #ffffff;
   padding: 60px 50px;
   border-radius: 12px;
   box-shadow: 0 10px 35px rgba(0,0,0,0.2);
-  width: 600px;
+  width: 600px;        /* same width as first page */
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-/* Bigger logo aligned left */
+/* Logo */
 .form-logo {
-  height: 90px;
+  height: 90px;       /* same as first page */
   display: block;
   margin-bottom: 25px;
 }
 
-/* Labels */
-label {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 8px;
-  color: #00132e; /* darker label */
+/* Displayed email */
+.user-email {
+  font-size: 15px;
+  color: #1a73e8;      /* slightly brighter blue */
+  margin-bottom: 25px;
+  font-weight: 500;
 }
 
-/* Input field */
-input[type="email"] {
+/* Password input box (match button width) */
+input[type="password"] {
   width: 100%;
   padding: 16px;
   border: 1px solid #ccc;
   border-radius: 6px;
   margin-bottom: 22px;
   font-size: 16px;
-  color: #00132e; /* darker input text */
 }
 
-/* Info text */
-.info-text {
-  font-size: 14px;
-  color: #00132e; /* darker info text */
-  margin-bottom: 24px;
-  line-height: 1.5;
-}
-
-/* Button */
+/* Action button */
 .weiter-btn {
-  display: inline-block;
   width: 100%;
   padding: 16px;
-  background-color: #4B0082; /* dark purple (change to #002366 for dark blue) */
+  background-color: #4B0082; /* dark purple */
   color: #fff;
   font-size: 17px;
   font-weight: bold;
   border: none;
   border-radius: 30px; /* curved pill shape */
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .weiter-btn:hover {
-  background-color: #360061; /* darker shade of purple */
-  /* If using dark blue instead, try #001a4d */
+  background-color: #360061;
 }
-
-
-/* Footer image aligned with form width */
-.footer-img-wrapper {
-  width: 600px;
-}
-
-.footer-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-}
-
-/* Displayed email above password field */
-.user-email {
-  font-size: 15px;
-  font-weight: 600;
-  color: #1a5fff; /* brighter blue */
-  margin-bottom: 20px;
-}
-
-
